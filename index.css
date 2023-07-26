@@ -1,0 +1,183 @@
+/* Add your CSS styles here */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+  /* Enable scrolling */
+}
+
+.content {
+  position: relative;
+  height: 100vh;
+  /* Full height of the viewport */
+  display: flex;
+  overflow: hidden;
+}
+
+.half-bg {
+  width: 50%;
+  /* Divide the section into two equal halves */
+  height: 100%;
+}
+
+/* 1 */
+.left-side {
+  background-color: #062c48;
+  /* Replace with the desired deeper blue color code */
+}
+
+.right-side {
+  background-color: #03202d;
+  /* Replace with the desired lighter blue color code */
+}
+
+/* 2 */
+.left-side2 {
+  background-color: #4330ab;
+  /* Replace with the desired deeper blue color code */
+}
+
+.right-side2 {
+  background-color: #0c1167;
+  /* Replace with the desired lighter blue color code */
+}
+/* 3 */
+.left-side3 {
+  background-color: #003687;
+  /* Replace with the desired deeper blue color code */
+}
+
+.right-side3 {
+  background-image: url(/rsc/interior.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.left-side-text {
+  padding: 120px;
+}
+
+/* 4 */
+.left-side4 {
+  background-color: #0b572a;
+  /* Replace with the desired deeper blue color code */
+}
+
+.right-side4 {
+  background-color: #257a47;
+  /* Replace with the desired deeper blue color code */
+}
+/* 5 */
+.left-side5 {
+  background-color: #0b572a;
+  /* Replace with the desired deeper blue color code */
+}
+
+.right-side5 {
+  background-color: #257a47;
+  /* Replace with the desired deeper blue color code */
+}
+
+.left-side-text {
+  padding: 120px;
+}
+
+.text-title {
+  font-size: 60px;
+}
+
+.phone-image {
+  margin-left: 150px;
+  width: 50%;
+}
+
+.panel {
+  height: 100%;
+  width: 100%;
+}
+
+/* Progress dots styling */
+/* Progress dots styling */
+.progress-dots {
+  position: fixed;
+  top: 20px; /* Adjust the top position as per your preference */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* To make sure the progress dots are above other content */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.dot.active {
+  background-color: #000; /* Change the color for the active dot */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .half-bg {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .left-side,
+  .right-side,
+  .left-side2,
+  .right-side2,
+  .left-side3,
+  .right-side3,
+  .left-side4,
+  .right-side4,
+  .left-side5,
+  .right-side5 {
+    height: 50%;
+  }
+
+  .left-side-text {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .text-title {
+    font-size: 36px;
+  }
+
+  .phone-image {
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+  }
+
+  .position-absolute.start-0 {
+    left: 0;
+  }
+
+  .position-absolute.start-50 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .position-absolute.top-50 {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .position-absolute.bottom-0 {
+    bottom: 0;
+  }
+
+  .position-absolute.end-0 {
+    right: 0;
+  }
+}
