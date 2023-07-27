@@ -1,3 +1,5 @@
+// code for scroll effect
+
 $(function () {
   // init
   var controller = new ScrollMagic.Controller({
@@ -21,7 +23,10 @@ $(function () {
   }
 });
 
-// Add this to your existing index.js
+
+
+// dots code here
+
 
 const sections = document.querySelectorAll(".panel");
 const dots = document.querySelectorAll(".dot");
@@ -49,7 +54,7 @@ function updateActiveSection() {
 
 document.addEventListener("scroll", updateActiveSection);
 
-// aos code
+// aos code here
 AOS.init({
   offset: 150,
   duration: 800,
