@@ -19,18 +19,20 @@
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" />
     <script src="/index.js" defer></script>
+    <!-- carousel -->
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
     <title>Scroll Effect</title>
 </head>
 
-<body class="">
+<!-- class="d-none d-sm-block" -->
 
+<body>
 
-    <div class="d-none d-md-block">
-        <div id="progress-indicator"></div>
-
-        <!-- Add the progress dots -->
+    <div class="progress-container">
         <div class="progress-dots">
             <span class="dot active"></span>
+            <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -38,17 +40,22 @@
         </div>
     </div>
 
-    <div id="progress-indicator"></div>
-    <section class="panel d-none d-md-block ">
+
+    <section class="panel  ">
         <div id="section1">
             <div class="content">
                 <div class="half-bg left-side">
-                    <div class="text-white position-absolute bottom-0 start-0 left-side-text">
-                        <div class="title  position-absolute top-0 end-0" data-aos="flip-down">
-                            <h3 class="fs-1">UX Startegy</h3>
-                            <h4>and UI design</h4>
+                    <div class="text-box-1 phone-d-none" data-aos="zoom-in" data-aos-delay="100">
+                        <h1>UX Startegy
+                        </h1>
+                        <h3> and UI design</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-dots1 phone-d-none">
                         </div>
-                        <h2 class="fw-bolder text-title" data-aos="flip-up" data-aos-duration="500">SECTION -1</h2>
+                    </div>
+                    <div class="text-box-2">
+                        <h2 class="page-title" data-aos="zoom-in">SECTION -1</h2>
                         <p>
                             We are the best 2 <br>
                             Web Development Company <br>
@@ -60,49 +67,48 @@
                         </div>
                     </div>
                 </div>
-                <div class="half-bg right-side position-relative">
-                    <!-- Add AOS to the right-side background image -->
-                    <div class="position-absolute top-0 start-0 " data-aos="fade-down" data-aos-duration="1300">
+                <div class="half-bg right-side">
+                    <div class="" data-aos="fade-down" data-aos-duration="1300">
                         <img src="/rsc/pizza_box.png" alt="pizza-box">
                     </div>
-                    <div class="position-absolute top-50 start-50 translate-middle" data-aos="fade-down">
-                        <!-- Add AOS to the phone image -->
+                    <div class="middle-pizza-photo" data-aos="fade-down">
                         <img class="phone-image" src="/rsc/ux-strategy-for-mobile-app-devlopment.png"
                             alt="phone-with-pizza-photo">
                     </div>
-                    <div class="position-absolute bottom-0 start-0 ml-4" data-aos="fade-up" data-aos-duration="1300">
-                        <!-- Add AOS to the bottom-left image -->
+                    <div class="buttom-phone-pizza" data-aos="fade-up" data-aos-duration="1300">
                         <img src="/rsc/domi-img1.png" alt="pizza-phone-dominos">
                     </div>
-                    <div class="position-absolute bottom-0 end-0">
+                    <div class="single-bread">
                         <img src="/rsc/dominos-bread.png" alt="single-bread" data-aos="fade-up"
                             data-aos-duration="1000">
-                        <!-- Add AOS to the bread image -->
                         <img src="/rsc/dominos-bread1.png" alt="star" data-aos="fade-left" data-aos-duration="1700">
-                        <!-- Add AOS to the star image -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- section 2 -->
-    <section class="panel d-none d-md-block">
+    <section class="panel ">
         <div id="section2">
             <div class="content">
                 <div class="half-bg left-side2">
-                    <!-- Add AOS to the left-side background image -->
-                    <div class="text-white position-absolute bottom-0 start-0 left-side-text">
-                        <div class="title  position-absolute top-0 end-0" data-aos="flip-down">
-                            <h3 class="fs-1">UX Startegy</h3>
-                            <h4>and UI design</h4>
+                    <div class="text-box-1 phone-d-none" data-aos="zoom-in" data-aos-delay="100">
+                        <h1>UX Startegy
+                        </h1>
+                        <h3> and UI design</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-dots2 phone-d-none">
                         </div>
-                        <h2 class="fw-bolder text-title" data-aos="flip-up" data-aos-duration="500">SECTION -2</h2>
+                    </div>
+                    <div class="text-box-2">
+                        <h2 class="page-title" data-aos="zoom-in">SECTION -2</h2>
                         <p>
                             We are the best 2 <br>
                             Web Development Company <br>
                             in the world <br>
                         </p>
-                        <div class="d-flex justify-content-between align-items-end w-100">
+                        <div class=" d-flex justify-content-between align-items-end w-100">
                             <p>View Case Study &rarr; </p>
                             <p>SKIP</p>
                         </div>
@@ -110,13 +116,12 @@
                 </div>
                 <div class="half-bg right-side2 position-relative">
                     <!-- Add AOS to the right-side background image -->
-                    <div class="position-absolute top-0 end-0 translate-middle" data-aos-duration="1700"
-                        data-aos="fade-down">
+                    <div class="middle-pizza-photo" data-aos-duration="1700" data-aos="fade-down">
                         <img class="w-75" src="/rsc/veme-app-ui-design.png" alt="phone-with-pizza-photo"
-                            data-aos="zoom-in"> <!-- Add AOS to the phone image -->
+                            data-aos="zoom-in">
+                        <!-- Add AOS to the phone image -->
                     </div>
-                    <div class="position-absolute bottom-0 start-0 ml-4" data-aos="fade-up" data-aos-delay="100"
-                        data-aos-duration="1700">
+                    <div class="buttom-phone-pizza" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1700">
                         <!-- Add AOS to the bottom-left image -->
                         <img class="w-75" src="/rsc/veme-blockchain-app-developed.png" alt="">
                     </div>
@@ -125,18 +130,23 @@
         </div>
     </section>
     <!-- section 3 -->
-    <section class="panel  d-none d-md-block">
+    <section class="panel  ">
         <div id="section1">
             <div class="content">
                 <div class="half-bg left-side3">
-                    <div class="text-white position-absolute bottom-0 start-0 left-side-text">
-                        <div class="title  position-absolute top-0 end-0" data-aos="flip-down">
-                            <h3 class="fs-1">UX Startegy</h3>
-                            <h4>and UI design</h4>
+                    <div class="text-box-1 phone-d-none" data-aos="zoom-in" data-aos-delay="100">
+                        <h1>UX Startegy
+                        </h1>
+                        <h3> and UI design</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-dots3 phone-d-none">
                         </div>
-                        <h2 class="fw-bolder text-title" data-aos="flip-up" data-aos-duration="500">SECTION 3</h2>
+                    </div>
+                    <div class="text-box-2">
+                        <h2 class="page-title" data-aos="zoom-in">SECTION -3</h2>
                         <p>
-                            We are the best 3 <br>
+                            We are the best 2 <br>
                             Web Development Company <br>
                             in the world <br>
                         </p>
@@ -148,8 +158,8 @@
                 </div>
                 <div class="half-bg right-side3 position-relative">
                     <!-- Add AOS to the right-side background image -->
-                    <div class="position-absolute top-0 start-0" data-aos="fade-up" data-aos-duration="1500">
-                        <img class="object-fit-contain" src="/rsc/erp-app-development-service.png" alt="pizza-box">
+                    <div class=" hand-photo" data-aos="fade-up">
+                        <img class="" src="/rsc/erp-app-development-service.png" alt="pizza-box">
                     </div>
 
                 </div>
@@ -157,18 +167,22 @@
         </div>
         </div>
     </section>
-    <section class="panel d-none d-md-block">
+    <section class="panel ">
         <!-- section 4 -->
         <div id="section2">
             <div class="content">
                 <div class="half-bg left-side4">
-                    <!-- Add AOS to the left-side background image -->
-                    <div class="text-white position-absolute bottom-0 start-0 left-side-text">
-                        <div class="title  position-absolute top-0 end-0" data-aos="flip-down">
-                            <h3 class="fs-1">UX Startegy</h3>
-                            <h4>and UI design</h4>
+                    <div class="text-box-1 phone-d-none" data-aos="zoom-in" data-aos-delay="100">
+                        <h1>UX Startegy
+                        </h1>
+                        <h3> and UI design</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-dots4 phone-d-none">
                         </div>
-                        <h2 class="fw-bolder text-title" data-aos="flip-up" data-aos-duration="500">SECTION -4</h2>
+                    </div>
+                    <div class="text-box-2">
+                        <h2 class="page-title" data-aos="zoom-in">SECTION -4</h2>
                         <p>
                             We are the best 2 <br>
                             Web Development Company <br>
@@ -183,13 +197,11 @@
                 <div class="half-bg right-side4 position-relative">
                     <!-- Add AOS to the right-side background image -->
 
-                    <div class="position-absolute bottom-0 start-50 ml-4 me-5 ms-5" data-aos="fade-up"
-                        data-aos-delay="100" data-aos-duration="1700">
+                    <div class="middle-pizza-photo" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1700">
                         <!-- Add AOS to the bottom-left image -->
                         <img class="w-75" src="/rsc/melltoo-img1.png" alt="">
                     </div>
-                    <div class="position-absolute top-50 start-50 end-0 ms-5 translate-middle" data-aos-duration="1700"
-                        data-aos="fade-down">
+                    <div class="buttom-phone-pizza" data-aos-duration="1700" data-aos="fade-down">
                         <img class="w-75" src="/rsc/melltoo-img2.png" alt="phone-with-pizza-photo" data-aos="zoom-in">
                         <!-- Add AOS to the phone image -->
                     </div>
@@ -198,17 +210,21 @@
         </div>
     </section>
     <!-- section  5 -->
-    <section class="panel d-none d-md-block">
+    <section class="panel ">
         <div id="section2">
             <div class="content">
                 <div class="half-bg left-side5">
-                    <!-- Add AOS to the left-side background image -->
-                    <div class="text-white position-absolute bottom-0 start-0 left-side-text">
-                        <div class="title  position-absolute top-0 end-0" data-aos="flip-down">
-                            <h3 class="fs-1">UX Startegy</h3>
-                            <h4>and UI design</h4>
+                    <div class="text-box-1 phone-d-none" data-aos="zoom-in" data-aos-delay="100">
+                        <h1>UX Startegy
+                        </h1>
+                        <h3> and UI design</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-dots5 phone-d-none">
                         </div>
-                        <h2 class="fw-bolder text-title" data-aos="flip-up" data-aos-duration="500">SECTION -5</h2>
+                    </div>
+                    <div class="text-box-2">
+                        <h2 class="page-title" data-aos="zoom-in">SECTION -5</h2>
                         <p>
                             We are the best 2 <br>
                             Web Development Company <br>
@@ -222,13 +238,11 @@
                 </div>
                 <div class="half-bg right-side5 position-relative">
                     <!-- Add AOS to the right-side background image -->
-                    <div class="position-absolute top-0 end-0 translate-middle" data-aos-duration="1700"
-                        data-aos="fade-down">
+                    <div class="middle-pizza-photo" data-aos-duration="1700" data-aos="fade-down">
                         <img class="w-75" src="/rsc/measure-total-body-weight-through-fitness-app.png"
                             alt="phone-with-pizza-photo" data-aos="zoom-in"> <!-- Add AOS to the phone image -->
                     </div>
-                    <div class="position-absolute bottom-0 start-0 ml-4" data-aos="fade-up" data-aos-delay="100"
-                        data-aos-duration="1700">
+                    <div class="buttom-phone-pizza" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1700">
                         <!-- Add AOS to the bottom-left image -->
                         <img class="w-75" src="/rsc/nasa-fitness-tracking-mobile-app.png" alt="">
                     </div>
@@ -236,134 +250,22 @@
             </div>
         </div>
     </section>
-    </div>
-
-    <!-- phone code here-->
-    <div class="d-block d-sm-none">
-        <section class="panel">
-            <div id="section1">
-                <div class="content">
-                    <div class="half-bg left-side">
-                        <div class="text-white left-side-text">
-                            <div class="title  position-absolute top-0 end-0" data-aos="flip-down">
-                                <h3 class="fs-1">UX Startegy</h3>
-                                <h4>and UI design</h4>
-                            </div>
-                            <h2 class="fw-bolder text-title" data-aos="flip-up" data-aos-duration="500">SECTION -1</h2>
-                            <p class="fs-1 fw-bold">SECTION -1</p>
-                            <p>
-                                We are the best  <br>
-                                Web Development Company <br>
-                                in the world <br>
-                            </p>
-                            <div class="d-flex justify-content-between align-items-end w-100">
-                                <p>View Case Study &rarr; </p>
-                                <p>SKIP</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="half-bg right-side position-relative">
-                        <!-- Add AOS to the right-side background image -->
-
-                        <div class="position-absolute top-50 start-50 translate-middle" data-aos="fade-down">
-                            <!-- Add AOS to the phone image -->
-                            <img class="phone-image " src="/rsc/ux-strategy-for-mobile-app-devlopment.png"
-                                alt="phone-with-pizza-photo">
-                        </div>
-                        <div class="position-absolute bottom-0 start-0 ml-4 w-25" data-aos="fade-up"
-                            data-aos-duration="1300">
-                            <!-- Add AOS to the bottom-left image -->
-                            <img src="/rsc/domi-img1.png" alt="pizza-phone-dominos">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section 2 -->
-        <section class="panel">
-            <div id="section2">
-                <div class="content">
-                    <div class="half-bg left-side2">
-                        <!-- Add AOS to the left-side background image -->
-                        <div class="text-white left-side-text">
-                            <div class="title  position-absolute top-0 end-0" data-aos="flip-down">
-                                <h3 class="fs-1">UX Startegy</h3>
-                                <h4>and UI design</h4>
-                            </div>
-                            <h2 class="fw-bolder text-title" data-aos="flip-up" data-aos-duration="500">SECTION -2</h2>
-                            <p>
-                                We are the best 2 <br>
-                                Web Development Company <br>
-                                in the world <br>
-                            </p>
-                            <div class="d-flex justify-content-between align-items-end w-100">
-                                <p>View Case Study &rarr; </p>
-                                <p>SKIP</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="half-bg right-side2 position-relative">
-                        <!-- Add AOS to the right-side background image -->
-                        <div class="position-absolute top-0 end-0 translate-middle" data-aos-duration="1700"
-                            data-aos="fade-down">
-                            <img class="w-75" src="/rsc/veme-app-ui-design.png" alt="phone-with-pizza-photo"
-                                data-aos="zoom-in"> <!-- Add AOS to the phone image -->
-                        </div>
-                        <div class="position-absolute bottom-0 start-0 ml-4" data-aos="fade-up" data-aos-delay="100"
-                            data-aos-duration="1700">
-                            <!-- Add AOS to the bottom-left image -->
-                            <img class="w-75" src="/rsc/veme-blockchain-app-developed.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section 3 -->
-        <section class="panel">
-            <div id="section1">
-                <div class="content">
-                    <div class="half-bg left-side3">
-                        <div class="text-white left-side-text">
-                            <div class="title  position-absolute top-0 end-0" data-aos="flip-down">
-                                <h3 class="fs-1">UX Startegy</h3>
-                                <h4>and UI design</h4>
-                            </div>
-                            <h2 class="fw-bolder text-title" data-aos="flip-up" data-aos-duration="500">SECTION 3</h2>
-                            <p>
-                                We are the best 3 <br>
-                                Web Development Company <br>
-                                in the world <br>
-                            </p>
-                            <div class="d-flex justify-content-between align-items-end w-100">
-                                <p>View Case Study &rarr; </p>
-                                <p>SKIP</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="half-bg right-side3 position-relative">
-                        <!-- Add AOS to the right-side background image -->
-                        <div class="position-absolute top-0 start-0" data-aos="fade-up" data-aos-duration="1500">
-                            <img class="object-fit-contain" src="/rsc/erp-app-development-service.png" alt="pizza-box">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-    </div>
-    </section>
+    <!-- section 6 -->
     <section class="panel">
-        <!-- section 4 -->
-        <div id="section2">
+        <div id="section1">
             <div class="content">
-                <div class="half-bg left-side4">
-                    <!-- Add AOS to the left-side background image -->
-                    <div class="text-white left-side-text">
-                        <div class="title  position-absolute top-0 end-0" data-aos="flip-down">
-                            <h3 class="fs-1">UX Startegy</h3>
-                            <h4>and UI design</h4>
+                <div class="half-bg left-side6">
+                    <div class="text-box-1 phone-d-none" data-aos="zoom-in" data-aos-delay="100">
+                        <h1>UX Startegy
+                        </h1>
+                        <h3> and UI design</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-dots6 phone-d-none">
                         </div>
-                        <h2 class="fw-bolder text-title" data-aos="flip-up" data-aos-duration="500">SECTION -4</h2>
+                    </div>
+                    <div class="text-box-2">
+                        <h2 class="page-title" data-aos="zoom-in">SECTION -6</h2>
                         <p>
                             We are the best 2 <br>
                             Web Development Company <br>
@@ -375,89 +277,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="half-bg right-side4 position-relative">
+                <div class="half-bg right-side6 position-relative">
                     <!-- Add AOS to the right-side background image -->
+                    <div class="" data-aos="fade-down" data-aos-duration="1300">
+                        <img src="/rsc/pizza_box.png" alt="pizza-box">
+                    </div>
+                    <div class="middle-pizza-photo" data-aos="fade-down">
+                        <img class="phone-image" src="/rsc/ux-strategy-for-mobile-app-devlopment.png"
+                            alt="phone-with-pizza-photo">
+                    </div>
+                    <div class="buttom-phone-pizza" data-aos="fade-up" data-aos-duration="1300">
+                        <img src="/rsc/domi-img1.png" alt="pizza-phone-dominos">
+                    </div>
+                    <div class="single-bread">
+                        <img src="/rsc/dominos-bread.png" alt="single-bread" data-aos="fade-up"
+                            data-aos-duration="1000">
+                        <img src="/rsc/dominos-bread1.png" alt="star" data-aos="fade-left" data-aos-duration="1700">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="position-absolute bottom-0 start-50 ml-4 me-5 ms-5" data-aos="fade-up"
-                        data-aos-delay="100" data-aos-duration="1700">
-                        <!-- Add AOS to the bottom-left image -->
-                        <img class="w-75" src="/rsc/melltoo-img1.png" alt="">
-                    </div>
-                    <div class="position-absolute top-50 start-50 end-0 ms-5 translate-middle" data-aos-duration="1700"
-                        data-aos="fade-down">
-                        <img class="w-75" src="/rsc/melltoo-img2.png" alt="phone-with-pizza-photo" data-aos="zoom-in">
-                        <!-- Add AOS to the phone image -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section  -->
-    <section class="panel">
-        <div id="section2">
-            <div class="content">
-                <div class="half-bg left-side5">
-                    <!-- Add AOS to the left-side background image -->
-                    <div class="text-white  left-side-text">
-                        <div class="title  position-absolute top-0 end-0" data-aos="flip-down">
-                            <h3 class="fs-1">UX Startegy</h3>
-                            <h4>and UI design</h4>
-                        </div>
-                        <h2 class="fw-bolder text-title" data-aos="flip-up" data-aos-duration="500">SECTION -5</h2>
-                        <p>
-                            We are the best 2 <br>
-                            Web Development Company <br>
-                            in the world <br>
-                        </p>
-                        <div class="d-flex justify-content-between align-items-end w-100">
-                            <p>View Case Study &rarr; </p>
-                            <p>SKIP</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="half-bg right-side5 position-relative">
-                    <!-- Add AOS to the right-side background image -->
-                    <div class="position-absolute top-0 end-0 translate-middle" data-aos-duration="1700"
-                        data-aos="fade-down">
-                        <img class="w-75" src="/rsc/measure-total-body-weight-through-fitness-app.png"
-                            alt="phone-with-pizza-photo" data-aos="zoom-in"> <!-- Add AOS to the phone image -->
-                    </div>
-                    <div class="position-absolute bottom-0 start-0 ml-4" data-aos="fade-up" data-aos-delay="100"
-                        data-aos-duration="1700">
-                        <!-- Add AOS to the bottom-left image -->
-                        <img class="w-75" src="/rsc/nasa-fitness-tracking-mobile-app.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-    </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        AOS.init({
-            offset: 150, // Change the distance (in pixels) from the element's bottom to trigger the animation
-            duration: 800, // Duration of the animation (in milliseconds)
-            easing: 'ease-in-out', // Easing function to control the animation's acceleration and deceleration
-            once: false, // Set to "false" to trigger the animations on every scroll (both up and down)
-            mirror: true // Set to "true" to mirror the animations on scroll up and scroll down
-            // Add any other custom options here as needed
-        });
-    </script>
 </body>
-<main>
-    <p></p>
-</main>
 
 </html>
